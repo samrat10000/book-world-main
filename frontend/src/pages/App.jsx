@@ -28,7 +28,7 @@ function App() {
   useGoogleOneTapLogin({
     onSuccess: async (credentialResponse) => {
       let promise = axios.post(
-        `${https://book-world-main-backend.onrender.com}/users/google-auth`,
+        `https://book-world-main-backend.onrender.com/users/google-auth`,
         {
           token: credentialResponse.credential,
           auth_method: "google",

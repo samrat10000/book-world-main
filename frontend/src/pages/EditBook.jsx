@@ -81,7 +81,7 @@ const EditBook = () => {
   const onSubmit = (values) => {
     setIsEditLoading(true);
     let promise = axios.put(
-      `${import.meta.env.VITE_BACKEND_URL}/books/` + id,
+      `https://book-world-main-backend.onrender.com/books/` + id,
       values,
       {
         headers: {

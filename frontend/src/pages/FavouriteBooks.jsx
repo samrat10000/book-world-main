@@ -16,7 +16,7 @@ const FavouriteBooks = () => {
   useEffect(() => {
     localStorage.getItem("token") &&
       axios
-        .get(`https://book-world-main-backend.onrender.com/users/favourites`, {
+        .get(`${import.meta.env.VITE_BACKEND_URL}/users/favourites`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

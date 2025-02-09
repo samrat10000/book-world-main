@@ -58,7 +58,7 @@ const BookDetails = () => {
       book &&
       axios
         .get(
-          `https://book-world-main-backend.onrender.com/books/${book?._id}/reviews/me`,
+          `${import.meta.env.VITE_BACKEND_URL}/books/${book?._id}/reviews/me`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -79,7 +79,7 @@ const BookDetails = () => {
       setIsHeartLoading(true);
       axios
         .put(
-          `https://book-world-main-backend.onrender.com/users/favourites`,
+          `${import.meta.env.VITE_BACKEND_URL}/users/favourites`,
           { bookId: book?._id },
           {
             headers: {

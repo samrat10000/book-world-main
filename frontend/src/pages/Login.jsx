@@ -190,12 +190,7 @@ const LoginForm = () => {
                 </Link>
               </p>
               
-              {/* Demo credentials */}
-              <div className="pt-4 space-y-1 text-xs text-gray-500 dark:text-gray-500 border-t border-gray-100 dark:border-zinc-800">
-                <p>Demo User: john.doe@example.com</p>
-                <p>Demo Admin: john.doe2@example.com</p>
-                <p>Password: password123</p>
-              </div>
+              
             </div>
           </div>
         </div>
